@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <title>Redford Premier Hockey League</title>
+       <!-- 
+         Redford premier hockey league main page
+         Filename: zambonientry.html
+
+         Author:   Kyle Martin
+         Date:     4/20/18
+         Final Project
+       -->
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+    	<link rel="stylesheet" href="styles/content.css">
+    	<link rel="shortcut icon" href="media/stick.ico">
+	</head>
+	<body>
+		<div class="header-nav-container">
+			<p class="skipnavigation"><a href="contentstart">Skip navigation</a></p>
+			<header>
+		    	<div>
+               		<img src="media/rphl.png" width="216" height="146" alt="Rphl logo">               
+            	</div>
+            <h1>Redford Premier Hockey League</h1>
+			</header>
+			<nav class="sitenavigation">
+        	<ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="poty.html">Player of the year</a></li>
+               <li><a href="leaguestats.html">League Standings</a></li>
+               <li><a href="zambonientry.html">Zamboni Entry</a></li>
+            </ul>
+        	</nav>
+		</div>
+         <div class="article-aside-outer-container">
+         	<div class="article-aside-inner-container">
+            	<article id="contentstart">
+            	<h2>Enter to Win a Zamboni Ride!</h2>
+			   	<form action="results.html">
+			      <fieldset class="contactinfo">
+			      	<legend><span>*</span>Contact information</legend>
+					 <label for="nameinput">
+				        <span>*</span>Name
+				        <input type="text" name="name" id="nameinput" placeholder="First and last name">
+					 </label>
+					 <label for="emailinput">
+				        <span>*</span>Email
+				        <input type="email" name="email" id="emailinput">
+					 </label>
+					 <label for="phoneinput">
+				        <span>*</span>Phone
+				        <input type="tel" name="phone" id="phoneinput">
+					 </label>
+					 <label for="addressinput">
+				        <span>*</span>Address
+				        <input type="text" name="address" id="addressinput">
+					 </label>
+					 <label for="cityinput">
+				        <span>*</span>City
+				        <input type="text" name="city" id="cityinput">
+					 </label>
+					 <label for="stateinput">
+				        <span>*</span>State
+				        <input type="text" name="state" id="stateinput">
+					 </label>
+					 <label for="zipinput">
+				        <span>*</span>Zip
+				        <input type="number" name="zip" id="zipinput" min="0">
+					 </label>
+					 <label for="ageinput">
+					 	Age
+					 	<input type="number" name="age" id="ageinput" min="0" max="110">
+					 </label>					 
+				  </fieldset>
+				  <fieldset class="mailinglist">
+				     <legend><span>*</span>Sign up for Mailing List?</legend>
+						<label for="yes">
+							<input type="radio" name="mailinglist" id="yes" value="Yes">
+							Yes
+						</label>
+						<label for="no">	
+							<input type="radio" name="mailinglist" id="no" value="No" checked>
+							No
+						</label>							
+				  </fieldset>
+				  <fieldset class="submitbutton">
+				  	<input type="submit" id="submit" value="Submit">
+				  </fieldset>				  
+			    </form>
+            	</article>
+            </div>
+        </div>
+        <footer>
+         <p>Redford Premier Hockey League &reg;</p>
+         <p>Redford, MI</p>
+         <p>(313)-555-1212</p>
+      </footer>
+	</body>
+</html>

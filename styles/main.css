@@ -1,0 +1,208 @@
+/* 
+   Redford premier hockey league style sheet 
+   Filename: main.css
+
+   Author:   Kyle Martin
+   Date:     3/26/18
+   Final Project
+ */
+ 
+ /* reset styles */
+ html {
+ 	   font-size: 20px;
+ }
+body, div, footer, header, h1, img, nav, p, h2, a, article, footer, aside {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+img{
+   max-width: 100%;
+   height: auto;
+   width: auto;
+}
+
+/* full page image */
+html {
+	   background-image: url("ice.jpg");
+	   background-size: cover;
+}
+
+/* body and page container */
+body {
+   font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+}
+.header-nav-container {
+   position: relative;
+}
+.article-aside-inner-container {
+   max-width: 1000px;
+   margin: 0 auto;
+   overflow: auto;
+   background-color: rgba(0,0,255,.7);
+   border-left: 3px solid black;
+   border-right: 3px solid black;
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px;
+}
+p.skipnavigation a:focus {
+   border: 2px solid black;
+   left: auto;
+   right: 1em;
+   top: 1em;
+   background-color: white;
+   color: black;
+   z-index: 2;
+}
+
+/* header section */
+header {
+   max-width: 800px;
+   margin: 0 auto;
+   text-align: center;
+   overflow: auto;
+}
+header h1 {
+	margin-top: -0.6em;
+	margin-bottom: .2em;
+	color: white;
+	font-size: 2.5em;
+	text-shadow: -2px -2px 0 #000,
+				  2px -2px 0 #000,
+		         -2px 2px 0 #000,
+		          2px 2px 0 #000;
+}
+header div img {
+	max-width: 600px;
+}
+
+/* site navigation */
+nav.sitenavigation {
+   	max-width: 100%;
+   	margin: 0 auto;
+   	text-align: center;
+   	background-color: rgba(255,0,0,0.7);
+   	border-top: 2px solid black;
+   	border-bottom: 2px solid black;
+   	font-size: 1.2em;
+}
+nav.sitenavigation a {
+	padding: 0.2em 0.5em;
+	display: inline-block;
+    border-radius: 7px;
+    color: white;
+}
+nav.sitenavigation li {
+    margin: 0.5em;
+    border: 2px solid black;
+    display: inline-block;
+    background-color: rgb(194, 195, 196);
+    font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;   
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1em;
+    text-shadow:  -1px -1px 0 black,
+				  1px -1px 0 black,
+		         -1px 1px 0 black,
+		          1px 1px 0 black;
+}
+nav.sitenavigation a:link {
+    text-decoration: none;
+}
+nav.sitenavigation a:active {
+   position: relative;
+   top: 1px;
+   left: 1px;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+   color: white;
+   background-color: black;
+   border-radius: 7px;
+   margin: 0 auto;
+}
+
+/* main content */
+article {
+   width: 70%;
+   padding-top: 2%;
+   float: left;
+   background-color: rgba(255,255,255,.8);
+}
+article h2 {
+   margin: 2% 7% 0.6em;
+   font-size: 1.6em;
+   font-weight: bold;
+   font-family: Verdana, Geneva, sans-serif;
+}
+article p {
+	padding: 1.0em 0.5em 1.0em 3.0em;
+}
+article div img {
+	padding-left: 3.0em;
+	max-width: 500px;
+}
+/* sidebar */
+aside {
+    width: 25%;
+    float: right;
+    padding: 2%;
+}
+aside h2 {
+   font-size: 1.2em;
+   font-weight: bold;
+   font-family: Verdana, Geneva, sans-serif;
+   padding: 2.0em 0 1.5em 0.5em;
+}
+aside p {
+   padding: 0.2em 1.0em 0.2em 1.0em;
+   color: white;
+}
+div .dates{
+	color: red;
+}
+.stats {
+	color: white;
+	font-size: 1.2em;
+}
+/* footer section */
+footer {
+   padding: 0.6em;
+   background-color: rgba(0,0,0, .9);
+   color: white;
+   text-align: center;
+   clear: both;
+}
+footer p {
+   margin: 0.4em;
+}
+
+/* print styles */
+@media print {
+   article, article h2, aside, body, footer, header, header h1 {
+      color: rgb(0,0,0);
+      background-color: rgb(255,255,255);
+   }
+   article {
+      border-right: 4px solid black;
+      width: 60.5%
+   }
+   body {
+      max-width: 100%;
+   }
+   footer {
+      border-top: 4px solid black;
+   }
+   header {
+      border-bottom: 4px solid black;
+   }
+   nav {
+      display: none;
+   }
+}
+@page {
+   margin: 1in;
+}

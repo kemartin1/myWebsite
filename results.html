@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <title>Redford Premier Hockey League</title>
+       <!-- 
+         Redford premier hockey league main page
+         Filename: results.html
+
+         Author:   Kyle Martin
+         Date:     4/20/18
+         Final Project
+       -->
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+    	<link rel="stylesheet" href="styles/content.css">
+    	<link rel="shortcut icon" href="media/stick.ico">
+	</head>
+	<body>
+		<div class="header-nav-container">
+			<p class="skipnavigation"><a href="contentstart">Skip navigation</a></p>
+			<header>
+		    	<div>
+               		<img src="media/rphl.png" width="216" height="146" alt="Rphl logo">               
+            	</div>
+            <h1>Redford Premier Hockey League</h1>
+			</header>
+			<nav class="sitenavigation">
+        	<ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="poty.html">Player of the year</a></li>
+               <li><a href="leaguestats.html">League Standings</a></li>
+               <li><a href="zambonientry.html">Zamboni Entry</a></li>
+            </ul>
+        	</nav>
+		</div>
+         <div class="article-aside-outer-container">
+         	<div class="article-aside-inner-container">
+            	<article id="contentstart">
+            	<h2 id="entry">Thanks for your entry!</h2>
+               	<h3>Your Entry:</h3>
+
+               <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+               <a class="home" href="index.html">Return Home</a>
+            </article>
+            </div>
+        </div>
+        <footer>
+         <p>Redford Premier Hockey League &reg;</p>
+         <p>Redford, MI</p>
+         <p>(313)-555-1212</p>
+      </footer>
+	</body>
+</html>
